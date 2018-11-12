@@ -1,0 +1,271 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.container{
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.clearfix{
+    clear: both;
+}
+.topmanu{
+    margin: 5px;
+    background-color: #f6f6f6;
+}
+.topmanu li{
+    float:right;
+    margin: 5px;
+}
+.topmanu li a{
+    text-decoration: none;
+}
+.topmanu li img{
+    float:left;
+    margin-right: 5px;
+}
+.facebook{
+    border-right: 2px solid #cccccc;
+	padding-right: 8px;
+}
+.facebook span{
+    color:#4460a0;
+    font-weight: bold;
+}
+.facebook span:hover{
+    color:#7f9bdb;
+}
+.twitter span{
+    color:#00aaec;
+    font-weight: bold;
+}
+.twitter span:hover{
+    color: #51e6ff;
+}
+.manu h1{
+    background-image: url('https://upload.cc/i1/2018/10/31/EjVCdv.png');
+    float:left;
+    height: 36px;
+    width: 170px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+.manu ul{
+    float: right;
+}
+.manu ul li{
+    float: left;
+    margin: 10px;
+    padding-right: 15px;
+    border-right: 3px solid #efefef;
+}
+.manu ul li a{
+    color:#42d3a9;
+    text-decoration: none;
+    display: block;
+    padding:10px 10px;
+    font-weight: bold;
+}
+.manu ul li a:hover{
+    border-bottom: 2px solid #00cc99;
+    padding-bottom: 8px;
+}
+.banner{
+    margin-top: 5px;
+}
+.banner{
+    background-image: url('https://i.imgur.com/b1MN85v.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 346px;
+    color: #fff;
+    position: relative;
+}
+.banner .banner-h2{
+    position: absolute;
+    top: 130px;
+    padding-left: 20px;
+    line-height: 48px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.course-list li{
+    text-align: center;
+    float:left;
+    width: 360px;
+    height: 433px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.course-list h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.course-list p{
+    text-align: left;
+    line-height: 30px;
+    padding: 10px;
+}
+.course-list .list li{
+    height: auto;
+    text-align: left;
+    margin-left: 28px;
+    padding: 6px;
+    list-style: disc;
+    box-shadow: none;
+}
+.img-html5{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.img-rwd{
+    margin-top: 49px;
+    margin-bottom: 47px;
+}
+.img-jquery{
+    margin-top: 42px;
+    margin-bottom: 20px;
+}
+
+.content-1{
+    width: 1200px;
+}
+.content-1 h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.content-1 table{
+    margin: 0 auto;
+    width: 80%;
+}
+.content-1 table th{
+    font-weight: bold;
+    background-color: #efefef;
+    padding: 13px 0;
+    text-align: left;
+}
+.content-1 table td{
+    padding: 13px 0;
+    text-align: left;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+.content-1 table .greed{
+    color: #00a67d;
+}
+.forms h2{
+    margin-top:25px;
+    text-align: center;
+    color: #fff;
+}
+.forms{
+    width: 100%;
+    height: 500px;
+    margin-top: 20px; 
+    background: linear-gradient(#00644b,#009872);
+    float: left;
+}
+.form-textarea{
+    float:left;
+    margin-left: 100px;
+    margin-top: 31px;
+}
+textarea{
+    border-radius: 5px;
+}
+.form-input{
+    float: left;
+    margin-left: 50px;
+}
+.form-input label{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+}
+.form-input li{
+    margin: 11px 5px;
+}
+input{
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.form-input input{
+    width: 500px;
+    height: 30px;
+}
+.form-input .btn{
+    float: right;
+    background-color: #00cc99;
+    width:62px;
+    height: 36px;
+}
+.footer{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer a{
+    float: left;
+    width: 160px;
+    height: 36px;
+    background-image: url('https://i.imgur.com/KPko8Eq.png');
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.footer ul{
+    float: right;
+}
+.footer span{
+    color: #e12d80;
+}

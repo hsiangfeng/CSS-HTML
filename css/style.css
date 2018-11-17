@@ -43,7 +43,7 @@ table {
     border-spacing: 0;
 }
 .container{
-    width: 1200px;
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -85,9 +85,10 @@ table {
 }
 .manu h1{
     background-image: url('https://upload.cc/i1/2018/10/31/EjVCdv.png');
-    float:left;
+    background-repeat: no-repeat;
+    float: left;
     height: 36px;
-    width: 170px;
+    width: 45.2%;
     text-indent: 101%;
     overflow: hidden;
     white-space: nowrap;
@@ -114,21 +115,16 @@ table {
     padding-bottom: 8px;
 }
 .banner{
-    margin-top: 5px;
-}
-.banner{
     background-image: url('https://i.imgur.com/b1MN85v.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 1200px;
     height: 346px;
     color: #fff;
-    position: relative;
+    display: flex;
+    align-items: center;
 }
-.banner .banner-h2{
-    position: absolute;
-    top: 130px;
+.banner li{
     padding-left: 20px;
     line-height: 48px;
     font-size: 30px;
@@ -137,10 +133,10 @@ table {
 .course-list li{
     text-align: center;
     float:left;
-    width: 360px;
-    height: 433px;
-    padding: 10px;
-    margin: 10px;
+    width: 29.333333%;
+    height: 450px;
+    padding: 1%;
+    margin: 1%;
     box-shadow: 2px 2px 2px 2px gray;
 }
 .course-list h3{
@@ -154,10 +150,11 @@ table {
     padding: 10px;
 }
 .course-list .list li{
-    height: auto;
     text-align: left;
-    margin-left: 28px;
-    padding: 6px;
+    width: 70%;
+    height: auto;
+    margin-left: 10%;
+    padding: 3%;
     list-style: disc;
     box-shadow: none;
 }
@@ -175,7 +172,7 @@ table {
 }
 
 .content-1{
-    width: 1200px;
+    max-width: 1200px;
 }
 .content-1 h2{
     margin-top: 10px;
@@ -203,60 +200,69 @@ table {
 .content-1 table .greed{
     color: #00a67d;
 }
+.forms{
+    background: linear-gradient(#00644b,#009872);
+    padding: 5%;
+    margin-top: 3%;
+}
+.forms form{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .forms h2{
-    margin-top:25px;
-    text-align: center;
     color: #fff;
 }
-.forms{
-    width: 100%;
-    height: 500px;
-    margin-top: 20px; 
-    background: linear-gradient(#00644b,#009872);
-    float: left;
-}
-.form-textarea{
+.forms-textarea{
     float:left;
-    margin-left: 100px;
+    width: 47%;
+    height: 215px; 
     margin-top: 31px;
-}
-textarea{
+    border:0;
     border-radius: 5px;
 }
 .form-input{
-    float: left;
-    margin-left: 50px;
+    float: right;
+    width: 50%;
+    border:0;
 }
 .form-input label{
     display: block;
+    margin-top: 25px;
     color: #fff;
     font-size: 20px;
 }
 .form-input li{
     margin: 11px 5px;
 }
-input{
+.form-input input{
     margin-top: 5px;
     border-radius: 5px;
-}
-.form-input input{
-    width: 500px;
+    border:0;
+    width: 100%;
     height: 30px;
+}
+.form-input input:focus{
+    border: 2px solid #51e6ff;
 }
 .form-input .btn{
     float: right;
     background-color: #00cc99;
+    color:#fff;
     width:62px;
     height: 36px;
+    cursor: pointer;
+}
+.form-input .btn:hover{
+    background-color: #039671;
+    color:#fff;
 }
 .footer{
-    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .footer a{
     float: left;
-    width: 160px;
+    width: 168px;
     height: 36px;
     background-image: url('https://i.imgur.com/KPko8Eq.png');
     text-indent: 101%;
@@ -268,4 +274,62 @@ input{
 }
 .footer span{
     color: #e12d80;
+}
+@media (max-width: 1200px) { 
+    .container{
+        max-width: 1140px;
+    }
+}
+@media (max-width: 992px) { 
+    .container{
+    max-width: 960px;
+    } 
+    .course-list li{
+        height: 628px;
+    }
+    .form-input{
+        width: 40%;
+    }
+}
+@media (max-width: 768px) { 
+    .container{
+    max-width: 720px;
+    padding: 0;
+    } 
+    .content-1 table{
+        width:  100%;
+        margin: 0;
+        font-size:14px;
+    }
+}
+
+@media (max-width: 576px) { 
+    .container{
+    max-width: 540px;
+    padding: 0;
+    } 
+    .content-1 h2{
+        font-size: 31px;
+    }
+    .course-list li{
+        float:none;
+        width: auto;
+        height: auto;
+    }
+    .content-1 table td{
+        width: 29%;
+    }
+    .manu{
+        padding-bottom: 10px;
+    }
+    .manu ul{
+        width: auto;
+    }
+    .manu ul li{
+        margin: 10px 0 0 0;
+        padding:0;
+    }
+    .manu ul li a:hover{
+        padding-bottom:6px;
+    }
 }

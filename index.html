@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>六角學院CSS基礎課程</title>
+        <title> 帶你學到會的線上課程 | 六角學院</title>
+        <link rel="icon" href="https://www.hexschool.com/favicon.ico">
+        <meta property="og:title" content=" 帶你學到會的線上課程  | 六角學院">
+        <meta property="og:description" content=" 打破影音課程售後不理，我們在線上等著你。 ">
+        <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fhtml_new.png?alt=media&amp;token=5374874e-0efe-491f-be41-8c5b8ef75730">
+        <meta property="fb:app_id" content="760173380749493">
+        <meta property="og:site_name" content="六角學院">
+        <meta property="og:locale" content="zh_TW">
+        <link rel="alternative" href="https://www.hexschool.com/atom.xml" title="六角學院" type="application/atom+xml">
+        <meta content=" 打破影音課程售後不理，我們在線上等著你。 " name="description">
+        <meta content="線上課程, 網頁設計, 前端, HTML, CSS, jQuery, javascript" name="keywords">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+            crossorigin="anonymous">
     </head>
 
     <body>
@@ -45,15 +57,18 @@
             </div>
             <div class="content">
                 <div class="banner">
-                    <div class="banner-h2">
-                        <h2>六角學院</h2>
-                        <h2>讓您奠定良好的前端基礎</h2>
-                    </div>
+                    <ul>
+                        <li>
+                            <h2>六角學院</h2>
+                        </li>
+                        <li>
+                            <h2>讓您奠定良好的前端基礎</h2>
+                        </li>
+                    </ul>
                 </div>
                 <ul class="course-list">
                     <li>
-                        <a href="#">
-                            <img src="https://i.imgur.com/3B2qEL6.png" class="img-html5"></a>
+                        <a href="#"><img src="https://i.imgur.com/3B2qEL6.png" class="img-html5"></a>
                         <h3>Html5 基礎教學</h3>
                         <p>課程結束後，我們會提供給你一個完整的網頁設計稿，當你實作出網頁來後再轉交六角學院的講師們，我們會為您進行程式碼審視，以確保你吸收的網頁排版觀念是正確的。了解設計網頁的脈絡，你隨時可以在社群裡發問問題，我們永遠都會在這裡！</p>
                     </li>
@@ -65,13 +80,14 @@
                     <li>
                         <a href="#"><img src="https://i.imgur.com/qq0aZ7o.png" class="img-jquery"></a>
                         <h3>JQuery 實戰教學</h3>
-                        <div class="list">
-                            <ul>
-                                <li>輕易掌握手機版網頁設計</li>
-                                <li>每週三線上傳授業界實務心法</li>
-                                <li>專業工程師為你檢視網頁程式碼</li>
-                            </ul>
-                        </div>
+                        <ul class="list">
+                            <li>輕易掌握手機版網頁設計</li>
+                            <div class="clearfix"></div>
+                            <li>每週三線上傳授業界實務心法</li>
+                            <div class="clearfix"></div>
+                            <li>專業工程師為你檢視網頁程式碼</li>
+                            <div class="clearfix"></div>
+                        </ul>
                     </li>
                     <div class="clearfix"></div>
                 </ul>
@@ -125,29 +141,20 @@
                         <h2>對我們的課程有興趣嗎</h2>
                         <h2>歡迎留下資料</h2>
                         <form action="/">
-                            <div class="form-textarea">
-                                <textarea cols="55" rows="14"></textarea>
-                            </div>
+                            <textarea class="forms-textarea" placeholder="請輸入您想告訴我們的話..."></textarea>
                             <div class="form-input">
-                                <ul>
-                                    <li>
-                                        <label for="name">姓名</label>
-                                        <input type="text" id="name" class="name" placeholder="請輸入姓名">
-                                    </li>
-                                    <li>
-                                        <label for="tek">電話</label>
-                                        <input type="tel" id="tek" class="tek" placeholder="請輸入姓名">
-                                    </li>
-                                    <li>
-                                        <label for="email">住址</label>
-                                        <input type="email" id="email" class="email" placeholder="請輸入姓名">
-                                    </li>
-                                </ul>
+                                <label for="name">姓名</label>
+                                <input type="text" id="name" class="name" placeholder="請輸入姓名">
+                                <label for="tek">電話</label>
+                                <input type="tel" id="tek" class="tek" placeholder="請輸入姓名">
+                                <label for="email">住址</label>
+                                <input type="email" id="email" class="email" placeholder="請輸入姓名"><br>
                                 <input type="submit" value="送出" class="btn">
                             </div>
+                            <div class="clearfix"></div>
                         </form>
                     </div>
-                    <div class="clearfix"></div>
+
                 </div>
             </div>
             <div class="footer">
